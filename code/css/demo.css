@@ -1,0 +1,573 @@
+body {
+  background: #1c1c1c; 
+  color: #fff;
+  font-size: 11px;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+@font-face {
+      font-family: 'fontello';
+      src: url('/font/fontello.eot?53112693');
+      src: url('./font/fontello.eot?53112693#iefix') format('embedded-opentype'),
+           url('./font/fontello.woff?53112693') format('woff'),
+           url('./font/fontello.ttf?53112693') format('truetype'),
+           url('./font/fontello.svg?53112693#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+    color: #b440ff;
+    transition: all .4s ease;
+}
+
+h1, h2, h3, #global-nav a, #footer a { font-family: 'Hammersmith One', sans-serif; letter-spacing: .2px; margin-top: 0px; }
+
+h1 { font-size: 40px; }
+
+h2 { font-size: 26px; }
+
+h3 { font-size: 17px; }
+
+p {
+    /* border: 1px solid #666; */
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.container {}
+
+@media only screen and (min-width: 768px) {
+    
+    #footer ul {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #footer ul li {
+        float: left;
+        list-style: none;
+        font-size: 13px;
+        font-family: 'Hammersmith One', sans-serif;
+        font-weight: 300;
+        letter-spacing: .5px;
+    }
+    
+    #footer ul li:not(:last-child) {
+        margin-right: 10px;
+    }
+    
+    #meaningful .grid_5 {
+        height: 260px;
+        background: no-repeat bottom center url(/images/d20_03.jpg);
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    #meaningful .grid_7 p {
+        margin-bottom: 30px;
+    }
+
+    #meaningful .grid_7 button {
+        font-size: 14px;
+        margin-right: 20px;
+        padding: 8px 20px;
+    }
+    
+    
+    #header .grid_12 h1 { margin: 90px 0px 5px 0px; }
+    
+    .dual { width: 50%; }
+
+    #dual { width: 100%; }
+
+    #dual2 { 
+    position: relative;
+    top: 0%;
+    left: 50%;
+    padding: 0px;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    }
+
+    .floatdis-l h2, .floatdis-r h2 {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .floatdis-l p, .floatdis-r p {
+        padding-top: 0px;
+        margin-top: 0px;
+        font-size: 18px;
+        max-width: 350px;
+    }
+
+    .floatdis-l { 
+        float: left;
+        width: 50%;
+        background: url('../images/hero-alchemist.jpg') right top;
+        height: 125px;
+        text-align: left;
+        padding-top: 30px;
+    }
+
+    .floatdis-r { float: left;
+        width: 50%;
+        background: url('../images/hero-alchemist-purple.jpg');
+        height: 125px;
+        text-align: left; 
+        padding-top: 30px;
+    }
+
+    .left { float: left; }
+
+    .right { float: right; }
+    
+    p#header-logo {
+        text-align: left;
+    }
+        
+    #blog-cta p {
+    padding: 0px 100px;
+    }
+    
+    #hideme { display: none; }
+}
+   
+
+/* @media only screen and (min-width: 768px) and (max-width: 995px) {    
+   
+} */
+
+@media only screen and (max-width: 767px) {
+    
+    #footer ul {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px;
+    }
+
+    #footer ul li {
+        float: none;
+        margin-right: 0px;
+        list-style: none;
+        font-size: 13px;
+        font-family: 'Hammersmith One', sans-serif;
+        font-weight: 300;
+        letter-spacing: .5px;
+        line-height: 25px;
+        text-align: center;
+    }
+    
+    #meaningful > div > div.grid_7 > button:nth-child(4) { margin-bottom: 45px; margin-left: 10px; }
+    
+    #meaningful { text-align: center; }
+    
+    #meaningful .grid_5 {
+        display: none;
+    }
+
+    #meaningful .grid_7 button {
+        width: auto;
+        font-size: 14px;
+        margin: 20px auto 0px auto;
+    }
+    
+    
+    #header .grid_12 h1 { margin: 30px 0px 5px 0px; }
+    
+    ul#global-nav {
+        display: none;
+    }
+    
+    #blog-cta .grid_3 {
+        display: none;
+    }
+    
+    #meaningful .grid_4 {
+        display: none;
+    }
+    
+    .dual { width: 50%; }
+
+    #dual { width: 100%; }
+
+    #dual2 { 
+        position: relative;
+        top: 0%;
+        left: 50%;
+        padding: 0px;
+        text-align: center;
+        transform: translate(-50%, 0%);
+    }
+
+    .floatdis-l h2, .floatdis-r h2 {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .floatdis-l p, .floatdis-r p {
+        padding-top: 0px;
+        margin-top: 0px;
+        font-size: 16px;
+        max-width: 350px;
+    }
+
+    .floatdis-l { 
+        float: left;
+        width: 50%;
+        background-image: url('../images/hero-alchemist.jpg');
+        height: 125px;
+        text-align: left;
+        padding-top: 30px;
+    }
+
+    .floatdis-r { float: left;
+        width: 50%;
+        background-image: url('../images/hero-alchemist-purple.jpg');
+        height: 125px;
+        text-align: left; 
+        padding-top: 30px;
+    }
+
+    .left { float: left; }
+
+    .right { float: left; }
+    
+    p#header-logo {
+        text-align: center;
+        margin-top: 40px;
+    }
+   
+}
+
+@media only screen and (max-width: 479px) {
+
+    
+#footer ul {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#footer ul li {
+    float: none;
+    margin-right: 0px;
+    list-style: none;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+}
+
+    
+    #meaningful > div > div.grid_7 > button:nth-child(4) { margin-bottom: 45px; }
+    
+    #meaningful { text-align: center; }
+    
+    #meaningful .grid_5 {
+        display: none;
+    }
+
+    #meaningful .grid_7 button {
+        width: auto;
+        font-size: 14px;
+        margin: 20px auto 10px auto;
+        padding: 8px 10px;
+    }
+    
+    #header .grid_12 h1 { margin: 30px 0px 5px 0px; font-size: 35px; }
+    
+    .grid_9 ul#global-nav {
+        display: none;
+    }
+    
+    #meaningful .grid_4 {
+        display: none;
+    }
+    
+    #blog-cta .grid_3 {
+        display: none;
+    }
+    
+    #blog-cta .grid_3 {
+        width: 100%;
+    }
+    
+    .dual { width: 100%; }
+
+    #dual { width: 100%; }
+
+    #dual2 { 
+        /*position: relative;
+        top: 0%;
+        left: 50%;
+        padding: 0px
+        text-align: center;
+        transform: translate(-50%, 0%);*/
+    }
+
+    .floatdis-l h2, .floatdis-r h2 {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .floatdis-l p, .floatdis-r p {
+        padding-top: 0px;
+        margin-top: 0px;
+        font-size: 16px;
+        max-width: 350px;
+    }
+
+    .floatdis-l { 
+        float: none;
+        width: 100%;
+        background-image: url('../images/hero-alchemist.jpg');
+        height: 125px;
+        text-align: left;
+        padding-top: 30px;
+    }
+
+    .floatdis-r {
+        float: none;
+        width: 100%;
+        background-image: url('../images/hero-alchemist-purple.jpg');
+        height: 125px;
+        text-align: left; 
+        padding-top: 30px;
+    }
+
+    .left { float: right; }
+
+    .right { float: right; }
+    
+    p#header-logo {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+
+}
+
+
+/* CUSTOM */
+
+ul#mobile-nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul#mobile-nav li {
+    list-style: none;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#\34 col-welcome .grid_3 p { margin-top: 0px; padding-top: 0px; }
+
+button { 
+    border: 2px solid #6b2299; padding: 8px 50px;
+    text-transform: uppercase;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+}
+
+button:hover {
+    background-color: #200a2d;
+    transition: all .4s ease;
+}
+
+#header {
+    background: fixed url('../images/hero-alchemist.jpg');
+    width: 100%;
+    padding-bottom: 120px;
+}
+
+#header .grid_12 { text-align: center; }
+
+#header .grid_12 p { margin: 0px 0px 30px 0px; }
+
+#header .grid_12 h1 span { color: #9536d3; }
+
+.purple, .gray-dark, .gray-light { 
+    padding: 40px 0px;
+}
+
+.purple a, .gray-dark a, .gray-light a, #dual2 a { 
+    color: #a72cee;
+    font-weight: bold;
+}
+
+.purple a:hover, .gray-dark a:hover, .gray-light a:hover, #dual2 a:hover { 
+    color: #bb54fd;
+    transition: all .4s ease;
+}
+
+
+.purple {
+    background-color: #2f0f43;
+}
+
+.gray-dark {
+    background-color: #1c1c1c;
+}
+
+.gray-light {
+    background-color: #ccc;
+}
+
+ul#global-nav li {
+    float: right;
+    list-style: none;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+ul#global-nav li:not(:first-child) {
+    margin-right: 15px;
+}
+
+.center { text-align: center; }
+
+
+/* LATEST FROM THE BLOG  */
+
+#blog-articles { }
+
+#blog-img1 { 
+    height: 150px;
+    position: relative;
+}
+
+#blog-img2 { 
+    height: 150px;
+    position: relative;
+}
+
+#blog-img3 { 
+    height: 150px;
+    position: relative;
+}
+
+#blog-img4 { 
+    height: 150px;
+    position: relative;
+    width: 100%;
+}
+
+.nopad {
+    padding-bottom: 0px !important;
+}
+
+#blog-cta button {
+    margin: 20px 0px 50px 0px;
+}
+
+
+.blog-link {
+    position: absolute;
+    bottom: -16px;
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0,.90);
+    padding: 10px 0px 10px 0px;
+}
+
+.blog-link h3 { 
+    width: 100%;
+}
+
+.blog-link a { 
+    position: relative;
+    left: 4px;
+    color: #fff;
+}
+
+.blog-link a:hover {
+    color: #999;
+    transition: all .4s ease;
+}
+
+
+/* TESTIMONIAL */
+
+#testimonial .grid_12 {  }
+
+#testimonial blockquote { 
+    padding: 0px; margin: 0px;
+    background: url(/images/quoter.png) top left no-repeat;
+    height: auto;
+    font-family: 'Hammersmith One', sans-serif; letter-spacing: .2px;
+}
+
+#testimonial blockquote p {
+    background: url(/images/quotel.png) bottom right no-repeat;
+    height: 100%;
+    padding: 10px 20px 10px 45px;
+    font-size: 17px;
+}
+
+p#testimonial-img { 
+    float: left;
+    margin: 0px 15px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+}
+
+p#testimonial-person { 
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 1px;
+    float: left;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px;
+}
+
+p#testimonial-person span { color: #ecd2fd; font-weight: 500; display: block; font-style: italic; letter-spacing: -.09px; font-size: 15px; }
+
+.clear { clear: both; }
+
+
+#footer ul li a {
+    color: #fff;
+}
+
+#footer ul li a:hover {
+    color: #b440ff;
+}
+
+#footer p { text-align: center; font-size: 11px; color: #aaa; }
+
+.icon-basket {
+    font-family: "fontello";
+}
+
+#sidr {
+    top: 36px;
+}
+
+#hideme p {
+     font-family: 'Hammersmith One', sans-serif;
+    font-size: 20px;
+    width: 100%; 
+    background-color: #000;
+    padding: 5px 10px;
+    text-align: left;
+    margin: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 20000000;
+}
